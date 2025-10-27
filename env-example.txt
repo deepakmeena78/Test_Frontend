@@ -1,0 +1,9 @@
+# Frontend Environment Variables
+
+For production deployment, create a `.env` file in the frontend directory:
+
+```
+REACT_APP_API_URL=https://your-backend-url.com/api
+```
+
+For local development, the frontend will automatically connect to `http://localhost:5000/api`.
