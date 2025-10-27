@@ -4,6 +4,12 @@ For production deployment, create a `.env` file in the frontend directory:
 
 ```
 REACT_APP_API_URL=https://your-backend-url.com/api
+REACT_APP_ENV=production
 ```
 
 For local development, the frontend will automatically connect to `http://localhost:5000/api`.
+
+## Important Notes:
+- Make sure your backend URL doesn't have a trailing slash
+- The API URL should point to your backend server, not the API routes
+- Example: If your backend is at `https://myapp.herokuapp.com`, use `REACT_APP_API_URL=https://myapp.herokuapp.com`
